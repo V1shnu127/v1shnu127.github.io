@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Vardhan Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar a:hover {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .profile img {
+            width: 127px;
+            height: 155px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .profile-info h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #555;
+        }
+        .profile-info p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #777;
+        }
+        .bio h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+        .bio p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+        .vision, .mission, .projects {
+            margin-top: 20px;
+        }
+        .vision h3, .mission h3, .projects h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .project-item {
+            margin-bottom: 20px;
+        }
+        .project-item h4 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #333;
+        }
+        .project-item p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .project-item a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+        .project-item a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#collaborators">Collaborators</a>
+        <a href="#activities">Activities</a>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <img src="images/ghibl.jpg" alt="Vishnu Vardhan">
+            <div class="profile-info">
+                <h1>Vishnu Vardhan</h1>
+                <h2>SDE/AI Engineer</h2>
+                <p>Hyderabad, Telangana, India</p>
+                <p>Email: vishnu.vardhangvs13786911@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://github.com/V1shnu127" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/vishnugsvs" target="_blank">LinkedIn</a>
+                    <a href="https://codeforces.com/profile/M0sc0w" target="_blank">CodeForces</a>
+                    <a href="https://leetcode.com/u/user0265si/" target="_blank">LeetCode</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bio">
+            <h2>Brief Bio</h2>
+            <p>I am Vishnu Vardhan, a Post Graduate student and student researcher currently affiliated with Dhirubhai Ambani University (DAU). With a background in Electronics and Communication (EC) from Manipal Institute of Technology, I bring a strong academic foundation in Speech Communication by integrating with Machine Learning to undergo my research pursuits.</p>
+            <p>As a Student Researcher, I am actively engaged in cutting-edge research in the fields of Machine and Deep learning architectures. My primary focus is on the application of speech processing applications in Speech Emotion Recognition, Audio Deepfake Generation and Detection.</p>
+        </div>
+
+        <div class="projects" id="projects">
+            <h3>Projects</h3>
+            <div class="project-item">
+                <h4>Speech Emotion Recognition System</h4>
+                <p>Developed a deep learning model to classify emotions in speech using CNN and LSTM architectures. Achieved 85% accuracy on the RAVDESS dataset. Integrated with real-time audio processing for practical applications.</p>
+                <a href="https://github.com/V1shnu127/speech-emotion-recognition" target="_blank">View Project</a>
+            </div>
+            <div class="project-item">
+                <h4>Audio Deepfake Detection</h4>
+                <p>Built a machine learning pipeline to detect synthetic audio using spectrogram analysis and transformer models. Evaluated on ASVspoof 2021 dataset with an EER of 3.2%. Deployed as a web service for real-time detection.</p>
+                <a href="https://github.com/V1shnu127/audio-deepfake-detection" target="_blank">View Project</a>
+            </div>
+            <div class="project-item">
+                <h4>Real-Time Speech Processing Framework</h4>
+                <p>Created a Python-based framework for real-time speech analysis, incorporating noise reduction and feature extraction. Optimized for low-latency performance on edge devices.</p>
+                <a href="https://github.com/V1shnu127/speech-processing-framework" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <div class="vision">
+            <h3>Vision:</h3>
+            <p>To lead the way in developing innovative solutions that harness the potential of AI, improving the lives of individuals and driving advancements in computing for a better future.</p>
+        </div>
+
+        <div class="mission">
+            <h3>Mission:</h3>
+            <p>To create transformative technologies that empower individuals and shape the future of AI-empowered humanity and computing.</p>
+        </div>
+    </div>
+
+    <script>
+        // Add any JavaScript functionality here if needed
+        // For example, you could add hover effects or dynamic content loading
+        document.querySelectorAll('.social-links a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.textDecoration = 'underline';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.textDecoration = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
