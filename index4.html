@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishnu Vardhan Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f7f5f0;
+    color: #222;
+  }
+  
+  section {
+    padding: 40px 60px;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f3ed;
+    padding: 60px 30px;
+  }
+  
+  .hero-left img {
+    height: 240px;
+    border: 2px solid #111;
+  }
+  
+  .hero-right {
+    margin-left: 40px;
+  }
+  
+  .hero-right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-right h2 {
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
+  .btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .about-left {
+    flex: 1;
+  }
+  
+  .about-right img {
+    max-width: 300px;
+    border: 2px solid #111;
+  }
+  
+  .experience, .education {
+    background-color: #fff;
+    padding-top: 20px;
+  }
+  
+  .experience h2, .education h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .exp-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .exp-year {
+    font-style: italic;
+    color: #555;
+    width: 60px;
+  }
+  
+  .exp-details p {
+    margin: 5px 0 0;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .edu-block {
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 60px;
+  }
+  
+  .skills-left {
+    flex: 1;
+  }
+  
+  .skills-right {
+    flex: 2;
+  }
+  
+  .skills h3 {
+    margin-bottom: 20px;
+  }
+  
+  .skills ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .connect-section {
+    background-color: #4d4d4d;
+    color: #fff;
+    padding: 60px 40px;
+    text-align: left;
+    font-family: 'Georgia', serif;
+  }
+  
+  .connect-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .connect-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  .connect-info a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .connect-social {
+    margin-top: 40px;
+  }
+  
+  .connect-social p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+  }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="images/vishnu.jpg" alt="Vishnu Vardhan">
+    </div>
+    <div class="hero-right">
+      <h1>Vishnu Vardhan</h1>
+      <h2>SDE / AI Engineer</h2>
+      <a href="#contact" class="btn">Reach out</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-left">
+      <h2>About Me (he/him)</h2>
+      <p>
+        I am a results-oriented AI Engineer with expertise in Speech Processing and Machine Learning. 
+        Passionate about advancing research in Emotion Recognition, Audio Deepfakes, and Real-Time AI solutions.
+      </p>
+    </div>
+    <div class="about-right">
+      <img src="images/laptop.jpg" alt="Work Desk">
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience">
+    <h2>Relevant Experience</h2>
+    <div class="exp-item">
+      <div class="exp-year">2025</div>
+      <div class="exp-details">
+        <strong>SDE / Research Intern</strong><br/>
+        DAU - Speech Lab<br/>
+        <p>Worked on scalable speech emotion recognition pipelines and dataset curation using PyTorch.</p>
+      </div>
+    </div>
+    <hr />
+    <div class="exp-item">
+      <div class="exp-year">2023</div>
+      <div class="exp-details">
+        <strong>Open Source Contributor</strong><br/>
+        Mozilla Voice / Kaggle<br/>
+        <p>Contributed to large-scale voice datasets and reproducible research pipelines in speech AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education">
+    <h2>Education, Certification & Others</h2>
+    <div class="edu-block">
+      <strong>Master’s in Speech and AI</strong><br/>
+      Dhirubhai Ambani University, 2024<br/>
+      Awarded Best Research Presentation.
+    </div>
+    <hr />
+    <div class="edu-block">
+      <strong>Bachelor’s in ECE</strong><br/>
+      Manipal Institute of Technology, 2021<br/>
+      CGPA: 9.1 / 10
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="skills-left">
+      <h2>Skills & Proficiencies</h2>
+    </div>
+    <div class="skills-right">
+      <h3>Professional Skills</h3>
+      <ul>
+        <li><strong>Speech Emotion Recognition:</strong> Designed end-to-end pipelines using CNNs and entropy features.</li>
+        <li><strong>Deep Learning:</strong> PyTorch, CNN, LSTM, Transformer Models</li>
+        <li><strong>Real-Time Audio Apps:</strong> Whisper, Wav2Vec2, Torchaudio</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js">
+    document.querySelectorAll('.socials a').forEach(link => {
+    link.addEventListener('mouseover', () => {
+      link.style.textDecoration = 'underline';
+    });
+    link.addEventListener('mouseout', () => {
+      link.style.textDecoration = 'none';
+    });
+  });
+  </script>
+
+<section class="connect-section">
+  <h2>Connect with me</h2>
+  <div class="connect-info">
+    <p><strong>Sarika Hussain</strong></p>
+    <p><a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></p>
+    <p>123-456-789</p>
+    <p><a href="https://www.reallygreatsite.com" target="_blank">www.reallygreatsite.com</a></p>
+    <p><a href="#">Find my resume here</a></p>
+  </div>
+
+  <div class="connect-social">
+    <p>Follow me on</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
